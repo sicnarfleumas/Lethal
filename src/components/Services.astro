@@ -1,0 +1,47 @@
+---
+
+---
+
+<section class="services">
+  <div class="Boxing"> <h3>Boxing</h3> </div>
+  <div class="Kickboxing"> <h3>Kickboxing</h3> </div>
+  <div class="Strength"> <h3>Strength & Functional Training</h3> </div>
+  <div class="Personal"> <h3>Personal Training</h3> </div>
+
+</section>
+
+<style>
+    .services {
+      display: flex;
+      gap: .5rem;
+      align-items: center;
+      justify-content: space-around;
+
+
+      height: 40vh;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 13rem;
+      width: 13rem;
+      border-radius: 1.875rem;
+
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
+
+    h3 {
+      color: #A7A7A7;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .Boxing {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url("../assets/images/Boxing.jpg"), lightgray 500% / contain no-repeat;
+    }
+</style>

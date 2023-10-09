@@ -13,6 +13,8 @@
     "@astrojs/mdx": "^1.1.1",
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.1",
+    "@fontsource/hind-madurai": "^5.0.8",
+    "@fontsource/roboto-slab": "^5.0.15",
     "astro": "^3.2.3"
   }
 }
