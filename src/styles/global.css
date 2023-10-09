@@ -49,3 +49,29 @@ table {
 	border-spacing: 0;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited {
+	color: inherit;
+}
+
+h2 {
+	font-size: 2.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #F1C644;
+}
+
+h3 {
+	font-size: 1.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}

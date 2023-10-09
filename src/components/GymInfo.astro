@@ -1,13 +1,86 @@
 ---
+import { Image } from "astro:assets";
 
+import image from "../assets/images/GymInfo.jpg"
+import Button from './Button.astro'
 ---
 
 <section class="info">
+  <div class="left">
+
+    <Image
+    src={image}
+    alt="Punching bag"
+    width={500}
+    class="image"
+    />
+
+  </div>
+
+  <div class="right">
+
+    <h2>Gym Information</h2>
+
+    <div class="hours">
+
+    <h3>Open Hours</h3>
+
+    <div class="wrapper">
+      <p>MONDAY - FRIDAY</p>
+      <p>6:00 am - 7:00 pm</p>
+    </div>
+
+    <div class="wrapper">
+      <p>SATURDAY</p>
+      <p>7:00 am - 8:30 am</p>
+    </div>
+    </div>
+
+  <div class="fee">
+    <h3>FEE STRUCTURE</h3>
+    <div class="wrapper">
+
+    <p>MONTHLY</p>
+    <p>₹ 2000/-</p>
+  </div>
+    <p><span>*</span>Payment Methods: Cash / UPI</p>
+  </div>
+
+  <Button />
+
+</div>
 
 </section>
 
 <style>
   .info {
-    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50ch;
+    gap: 2rem;
+
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 5% 0%;
+  }
+
+  .image {
+    border-radius: 10px;
+    border-right: #F1C644 solid .65rem;
+    border-bottom: #F1C644 solid .65rem;
+  }
+
+  span {
+    color: #F1C644;
   }
 </style>
