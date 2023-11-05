@@ -1,0 +1,228 @@
+---
+import { Image } from "astro:assets";
+
+
+// Import Images
+import gold from '../assets/images/medals/gold.png'
+import silver from '../assets/images/medals/silver.png'
+import uni from '../assets/images/medals/uni.png'
+---
+
+<!-- <div class="card-container">
+  <div class="card">
+      <div class="card-front">
+        <h3>{player}</h3>
+      </div>
+      <div class="card-back">
+        <div class="wrapper">
+          <div class="place">
+            <Image src={src} alt="Gold Medal" width={33} />
+          <p>{title1}</p>
+          </div>
+          <div class="place">
+            <Image src={src} alt="Gold Medal" width={33} />
+          <p>{title2}</p>
+          </div>
+          <div class="place">
+            <Image src={src} alt="Gold Medal" width={33} />
+          <p>{title3}</p>
+          </div>
+          <div class="place">
+            <Image src={src} alt="Gold Medal" width={33} />
+          <p>{title4}</p>
+          </div>
+          <div class="place">
+            <Image src={src} alt="Gold Medal" width={33} />
+          <p>{title5}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div> -->
+
+
+<div class="card-container">
+  <div class="card">
+
+    <div class="card-front">
+        <h3>Kaviya</h3>
+      </div>
+
+      <div class="card-back">
+        <div class="wrapper">
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Boxing Championship 2021</p>
+            </div>
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Boxing Championship 2022</p>
+            </div>
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>South India Boxing championship 2022</p>
+            </div>
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Muay thai Championship 2023</p>
+            </div>
+
+            <div class="placement">
+              <Image src={silver} alt="Gold Medal" width={33} />
+              <p>National Muay Thai Championship 2023</p>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <div class="card">
+
+    <div class="card-front">
+        <h3>Muthuram</h3>
+      </div>
+
+      <div class="card-back">
+        <div class="wrapper">
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>District Kickboxing Championship 2020</p>
+            </div>
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Kickboxing Championship 2021</p>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <div class="card">
+
+    <div class="card-front">
+        <h3>Tamil Selvan</h3>
+      </div>
+
+      <div class="card-back">
+        <div class="wrapper">
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Kickboxing Championship 2021</p>
+            </div>
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>National Kickboxing Championship 2021</p>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="card-container">
+  <div class="card">
+
+    <div class="card-front">
+        <h3>Soniya</h3>
+      </div>
+
+      <div class="card-back">
+        <div class="wrapper">
+
+            <div class="placement">
+              <Image src={gold} alt="Gold Medal" width={33} />
+              <p>State Kickboxing Championship 2021</p>
+            </div>
+
+            <div class="placement">
+              <Image src={uni} alt="Gold Medal" width={33} />
+              <p>Participated in All India University Boxing 2023</p>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<style>
+
+  .placement {
+    display: flex;
+    flex-direction: row;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* Container for the card */
+  .card-container {
+      perspective: 1000px;
+      width: 15rem;
+      height: 20rem;
+  }
+
+  /* Card that flips */
+  .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+  }
+
+  /* Front of the card */
+  .card-front,
+  .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      backface-visibility: hidden;
+      padding: 5%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 1rem;
+      font-size: 1.5rem;
+      color: #333;
+  }
+
+  /* Front styling */
+  .card-front {
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #25D366;
+  }
+
+  /* Back styling */
+  .card-back {
+      background-color: #25D366;
+      transform: rotateY(180deg);
+  }
+
+  .card-back p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  /* Hover effect to flip the card */
+  .card-container:hover .card {
+      transform: rotateY(180deg);
+  }
+</style>

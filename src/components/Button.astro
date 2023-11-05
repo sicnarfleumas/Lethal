@@ -1,10 +1,10 @@
 ---
 import '@fontsource/roboto-slab/900.css';
 
-
+const {cta = "GET IN TOUCH!"} = Astro.props;
 ---
 
-<a href="">GET IN TOUCH</a>
+<a href="https://wa.me/+918056200031" target="_blank">{cta}</a>
 
 <style>
 /* Reset a tag */
@@ -14,6 +14,7 @@ a {
 
   font-family: 'Roboto Slab', sans-serif;
   font-size: 1.25rem;
+  text-transform: uppercase;
   letter-spacing: .15ch;
 
   padding: .5rem;
