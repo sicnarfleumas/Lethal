@@ -8,39 +8,6 @@ import silver from '../assets/images/medals/silver.png'
 import uni from '../assets/images/medals/uni.png'
 ---
 
-<!-- <div class="card-container">
-  <div class="card">
-      <div class="card-front">
-        <h3>{player}</h3>
-      </div>
-      <div class="card-back">
-        <div class="wrapper">
-          <div class="place">
-            <Image src={src} alt="Gold Medal" width={33} />
-          <p>{title1}</p>
-          </div>
-          <div class="place">
-            <Image src={src} alt="Gold Medal" width={33} />
-          <p>{title2}</p>
-          </div>
-          <div class="place">
-            <Image src={src} alt="Gold Medal" width={33} />
-          <p>{title3}</p>
-          </div>
-          <div class="place">
-            <Image src={src} alt="Gold Medal" width={33} />
-          <p>{title4}</p>
-          </div>
-          <div class="place">
-            <Image src={src} alt="Gold Medal" width={33} />
-          <p>{title5}</p>
-          </div>
-        </div>
-      </div>
-  </div>
-</div> -->
-
-
 <div class="card-container">
   <div class="card">
 
@@ -53,12 +20,12 @@ import uni from '../assets/images/medals/uni.png'
 
             <div class="placement">
               <Image src={gold} alt="Gold Medal" width={33} />
-              <p>State Boxing Championship 2021</p>
+              <p>State Boxing <br>Championship 2021</p>
             </div>
 
             <div class="placement">
               <Image src={gold} alt="Gold Medal" width={33} />
-              <p>State Boxing Championship 2022</p>
+              <p>State Boxing <br>Championship 2022</p>
             </div>
 
             <div class="placement">
@@ -167,7 +134,7 @@ import uni from '../assets/images/medals/uni.png'
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 1rem;
   }
   /* Container for the card */
@@ -193,7 +160,7 @@ import uni from '../assets/images/medals/uni.png'
       height: 100%;
       position: absolute;
       backface-visibility: hidden;
-      padding: 5%;
+      padding-left: 10%;
 
       display: flex;
       justify-content: center;

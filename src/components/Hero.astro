@@ -12,13 +12,13 @@ import { SITE_TITLE } from "../consts";
 <Header title={SITE_TITLE} />
 <section class="hero">
 
-
   <h2>Welcome to lethal kick boxing academy</h2>
   <h1>THE BEST KICKBOXING GYM<br>
     IN CHENNAI</h1>
   <p>Our gym is dedicated to providing top-notch training and guidance to brindividuals of all skill levels, from beginners to seasoned fighters aspiring to become champions.</p>
 
   <CTA cta="call today"/>
+
 </section>
 </div>
 
@@ -35,7 +35,6 @@ import { SITE_TITLE } from "../consts";
     display: flex;
     flex-direction: column;
     align-items: left;
-
     padding: 5% 13%;
   }
 
@@ -58,5 +57,30 @@ import { SITE_TITLE } from "../consts";
     padding-bottom: 2rem;
     width: 50ch;
     line-height: 115%;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .wrapper {
+    }
+    .hero {
+      padding: 15% 5%;
+
+      justify-content: center;
+    }
+    h2 {
+      padding-bottom: 1rem;
+      width: 90%;
+
+    }
+    h1 {
+      line-height: 2ch;
+      padding-bottom: 1rem;
+
+    }
+    p {
+      line-height: 1.25;
+      padding-bottom: 1rem;
+      width: 90%;
+    }
   }
 </style>

@@ -6,7 +6,7 @@ import Button from './Button.astro'
 
 ---
 
-<section class="info">
+<section class="info" id="info">
 
   <div class="left">
 
@@ -85,5 +85,25 @@ import Button from './Button.astro'
 
   span {
     color: #F1C644;
+  }
+
+  @media screen and (max-width: 768px) {
+    .info {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .wrapper {
+      justify-content: left;
+    }
+
+    .right {
+      width: 100%;
+      padding: 0 0 5% 5%;
+    }
+
+    .left {
+      display: none;
+    }
   }
 </style>
