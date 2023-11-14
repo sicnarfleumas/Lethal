@@ -1,0 +1,120 @@
+---
+import { Image } from 'astro:assets';
+import star from '../assets/images/star.svg'
+
+
+---
+<section class="reviews">
+
+<h2>CUSTOMER STORIES</h2>
+<div class="carousel-container">
+
+  <div class="carousel">
+      <div class="slide">
+          <a href="https://g.co/kgs/1jBXDR" target="_blank" >Bharath Jain</a><br>
+          <Image src={star} alt="star" width={190} class="star"/>
+
+          <p>Best place to learn basics to advanced kickboxing from Saravanan sir with proper technique. He will help you improve your reflexes and will always push you to do better. You'll never regret joining this academy. Thank you Saravanan sir for your guidance🙌</p>
+      </div>
+      <div class="slide">
+          <a href="https://g.co/kgs/5J2Qxt" target="_blank" >Shan S</a><br>
+          <Image src={star} alt="star" width={190} class="star"/>
+
+          <p>It has been three months since my joining. I have always wanted to learn self defense and joining lethal kickboxing was the best decision I've made. Coach Saravanan is an amazing and dedicated teacher who makes sure you push yourself to train your best, at the same time learn the skill too. Definitely a great place to have an active and healthy lifestyle.</p>
+
+      </div>
+      <div class="slide">
+
+        <a target="_blank" href="https://g.co/kgs/wiV4ho">Appu KPkP</a><br>
+        <Image src={star} alt="star" width={190} class="star"/>
+        <p>Extradinory coach! National champion mr. Saravanan sir is amazing human bein and perfect trainer for me lethol kick boxing academy for amazing coach .I satisfy the lethaol kick boxing academy coach (saravanan) tq for your support and i proud thankful your my coach!</p>
+
+      </div>
+      <!-- Add more slides as needed -->
+  </div>
+  <div class="controls">
+    <button class="carousel-prev">Previous</button>
+    <button class="carousel-next">Next</button>
+  </div>
+
+</div>
+</section>
+
+<style>
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.73rem;
+  line-height: 2;
+}
+
+p {
+  line-height: 2;
+  font-size: 1rem;
+  color: black;
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.carousel {
+    display: flex;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    border: none;
+    background: none;
+    font-size: .75rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    align-items: left;
+    height: auto;
+    width: 80%
+  }
+
+  .carousel {
+    align-items: center;
+    width: 100%;
+  }
+
+  .star {
+    width: 11rem;
+  }
+
+  p {
+    text-align: justify;
+    padding: 3%;
+  }
+}
+
+</style>

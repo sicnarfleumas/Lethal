@@ -185,7 +185,6 @@ import uni from '../assets/images/medals/uni.png'
 
       border-radius: 1rem;
       font-size: 1.5rem;
-      color: #333;
   }
 
   /* Front styling */
@@ -197,7 +196,6 @@ import uni from '../assets/images/medals/uni.png'
 
   /* Back styling */
   .card-back {
-      background-color: #25D366;
       transform: rotateY(180deg);
   }
 
@@ -208,5 +206,15 @@ import uni from '../assets/images/medals/uni.png'
   /* Hover effect to flip the card */
   .card-container:hover .card {
       transform: rotateY(180deg);
+  }
+
+  @media screen and (max-width: 768px) {
+    .card-front,
+    .card-back {
+      font-size: 1rem;
+    }
+    .card-back p {
+      font-size: 0.8rem;
+    }
   }
 </style>

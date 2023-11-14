@@ -2,6 +2,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,10 +78,11 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-	body {
-		overflow-x: hidden;
-	}
 
+	html {
+		overflow-x: hidden;
+		background-color: black;
+	}
 	h2 {
 		font-size: 2rem;
 	}
